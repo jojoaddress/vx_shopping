@@ -1,0 +1,38 @@
+/* pages/shopcar/shopcar.wxss */
+.cellfooter text{
+  width: 60rpx;
+  display: inline-block;
+  background-color: gainsboro;
+  text-align: center;
+
+}
+
+.checkBox{
+  display: flex;
+}
+
+.imagePic{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.checkText .checkText{
+  font-size: 30rpx;
+}
+
+.footer{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: white;
+  display: flex;
+}
+
+.footer_button{
+  margin-right: 30rpx;
+}
+

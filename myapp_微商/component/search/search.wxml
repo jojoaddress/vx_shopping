@@ -1,0 +1,2 @@
+<!--component/search/search.wxml-->
+<input placeholder="请搜索" bindtap="handleTap"/>

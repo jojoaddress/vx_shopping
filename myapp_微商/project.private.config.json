@@ -1,0 +1,36 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/detail/detail",
+          "query": "id=1&title=%E8%8D%A3%E8%80%809X",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/center/center",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/shopcar/shopcar",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

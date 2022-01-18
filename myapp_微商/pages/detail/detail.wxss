@@ -1,0 +1,74 @@
+/* pages/detail/detail.wxss */
+
+.box image{
+  width: 100%;
+  height: 200px;
+}
+.box{
+  height: 200px;
+}
+.detail_tabbar{
+  width: 100vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  display: flex;
+  background-color: white;
+  padding: 20rpx;
+
+}
+
+.detail_tabbar view{
+  flex: 1px;
+}
+
+.detail_tabbar .active{
+  border-bottom: 3rpx solid #12F1A1;
+}
+
+.user{
+  overflow: hidden;
+  padding: 20rpx;
+}
+.user image{
+  width:100rpx;
+  border-radius: 50%;
+
+}
+.user .left{
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.user .right{
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.content{
+  padding: 20rpx;
+}
+.content image{
+  width: 200rpx;
+}
+
+.commentContainer{
+  border-bottom: 0.5rpx solid gray;
+}
+
+.bottom{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#24C9DA;
+  display:flex;
+}
+.bottom view{
+  flex:1px;
+}

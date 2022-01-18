@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/category/category",
+    "pages/shopcar/shopcar",
+    "pages/center/center",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/searchlist/searchlist",
+    "pages/auth/auth",
+    "pages/telform/telform"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#26CDA4",
+    "navigationBarTitleText": "Test",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#29CCC0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "./images/icons/汗颜.png",
+        "selectedIconPath": "./images/icons/笑脸.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "./images/icons/泡泡.png",
+        "selectedIconPath": "./images/icons/泡泡.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "./images/icons/扭蛋.png",
+        "selectedIconPath": "./images/icons/扭蛋.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "./images/icons/纸飞机.png",
+        "selectedIconPath": "./images/icons/风筝.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui":true
+  }
+
+}

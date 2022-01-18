@@ -1,0 +1,42 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view>
+
+  <mp-cells ext-class="my-cells" title="购物车列表" wx:if="{{cartList.length}}">
+    <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" wx:for="{{cartList}}" wx:key="index" data-id="{{item.id}}">
+      <mp-cell>
+        <view class="checkBox">
+          <checkbox checked="{{item.checked}}" bindtap="checkIs" data-item="{{item}}"></checkbox>
+
+          <view bindtap="handChangePage" data-title="{{item.good.title}}" data-id="{{item.id}}">
+            <image  class="imagePic" src="http://localhost:5000{{item.good.poster}}" mode="aspectFit"></image>
+            <view class="checkText">
+              <view>{{item.good.title}}</view>
+              <view style="color: red;">${{item.good.price}}</view>
+            </view>
+          </view>
+
+        </view>
+
+        <view slot="footer" class="cellfooter" >
+          <text bindtap="handleMinus" data-item="{{item}}">-</text>
+          <text>{{item.number}}</text>
+          <text bindtap="handleAdd" data-item="{{item}}">+</text>
+        </view>
+      </mp-cell>
+    </mp-slideview>
+  </mp-cells>
+
+  <view wx:else style="text-align: center;">购物车是空的</view>
+
+  <wxs src="./shopcar.wxs" module="ave"></wxs>
+  <view class="footer">
+    <checkbox-group bindchange="handleChange">
+      <checkbox checked="{{ave.check(cartList)}}"></checkbox>
+    </checkbox-group>
+
+    <view style="margin-right: 20rpx;">全选</view>
+    <view>合计：${{ave.sum(cartList)}}</view>
+    <button class="footer_button" type="primary" size="mini">结算</button>
+  </view>
+
+</view>

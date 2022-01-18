@@ -1,0 +1,12 @@
+<!--pages/telform/telform.wxml-->
+<mp-form-page title="验证" subtitle="您的手机号将于微信绑定">
+    <mp-cells title="信息">
+      <mp-cell prop="mobile" title="手机号" >
+        <input bindinput="formInputChange" data-number="mobile" placeholder="请输入手机号"/>
+        <button slot="footer" size="mini" type="warn">获取验证码</button>
+      </mp-cell>
+    </mp-cells>
+    <view slot="button">
+        <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+    </view>
+</mp-form-page>
